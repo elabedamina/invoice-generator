@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Arial"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+
+<A NAME="table0"></A>
+<table cellspacing="0" border="0">
+	
+	<tr>
+		<td colspan=5 height="48" align="left" valign=middle><font size=5 color="#000000">{{Company_Name}}</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<h1><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROFORMA INVOICE</strong></h1>	<tr>
+		<td colspan=5 height="20" align="left" valign=bottom><font color="#000000">{{Company_Slogan}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><b><font color="#000000">Date</font></b></td>
+		<td align="center" valign=bottom bgcolor="#E4E8F3" sdval="43617" sdnum="1033;0;M/D/YY"><font color="#000000">{{Date}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="20" align="left" valign=bottom><font color="#000000">{{Street_Address}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><b><font color="#000000">Expiration Date</font></b></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign=bottom bgcolor="#E4E8F3" sdval="43646" sdnum="1033;0;M/D/YY"><font color="#000000">{{Expiration_Date}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="20" align="left" valign=bottom><font color="#000000">{{City_ZIP}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><b><font color="#000000">Invoice n°</font></td>
+		<td style="border-right: 1px solid #000000" align="left" valign=bottom><b><font color="#000000"><br></font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">{{num_invoice}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="20" align="left" valign=bottom><font color="#000000">Phone: {{phone}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">Fax: {{fax}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+	</tr>
+	<tr>
+		<td height="21" align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="22" align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">CUSTOMER</font></b></td>
+		<td align="left" valign=middle><br></td>
+		<td colspan=3 align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">SHIP TO</font></b></td>
+		<td align="left" valign=middle><br></td>
+		<td colspan=3 align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">SHIPPING DETAILS</font></b></td>
+		</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">{{Name_Customer}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=3 align="left" valign=bottom><font color="#000000">{{Name_Ship}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Freight Type</font></td>
+		<td align="left" valign=bottom><font color="#000000">{{Air_Ocean}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">{{Company_Name_Customer}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=3 align="left" valign=bottom><font color="#000000">{{Company_Name_Ship}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Est Ship Date</font></td>
+		<td align="left" valign=bottom><font color="#000000">{{Est_Ship_Date}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">{{Address_Customer}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=3 align="left" valign=bottom><font color="#000000">{{Address_Ship}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Est Gross Weight</font></td>
+		<td align="left" valign=bottom><font color="#000000">{{weight_units_Groos}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">{{City_ZIP_Customer}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=3 align="left" valign=bottom><font color="#000000">{{City_ZIP_Ship}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Est Cubic Weight</font></td>
+		<td align="left" valign=bottom><font color="#000000">{{weight_units_Cubic}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=3 height="21" align="left" valign=bottom><font color="#000000">{{Phone_Customer}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=3 align="left" valign=bottom><font color="#000000">{{Phone_Ship}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Total Packages</font></td>
+		<td align="left" valign=bottom><font color="#000000">{{Total_Package}}</font></td>
+	</tr>
+	<tr>
+		<td height="21" align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid #000000" height="38" align="center" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">PART NUMBER</font></b></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">UNIT OF MEASURE</font></b></td>
+		<td style="border-bottom: 1px solid #000000" colspan=6 align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">DESCRIPTION</font></b></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">QTY</font></b></td>
+		<td style="border-bottom: 1px solid #000000" align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">UNIT PRICE</font></b></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">TOTAL AMOUNT</font></b></td>
+	</tr>
+
+	<tbody>
+		{% for product in products %}
+		<tr>
+			<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="21" align="left" valign=top><font color="#000000">{{product.product_id}}</font></td>
+		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top><font color="#000000">{{product.product_unit}}</font></td>
+		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000" colspan=6 align="left" valign=top><font color="#000000">{{product.product_name}}</font></td>
+		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top sdval="3" sdnum="1033;"><font color="#000000">{{product.product_qty}}</font></td>
+		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=top sdval="45.23" sdnum="1033;0;#,##0.00;(#,##0.00)"><font color="#000000">{{ product.product_up }}</font></td>
+		<td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=top bgcolor="#F0F0F0" sdval="135.69" sdnum="1033;0;#,##0.00;(#,##0.00)"><font color="#000000">{{product.product_total}}</font></td>
+	
+		</tr>
+		{% endfor %}
+	</tbody>
+	
+	<tr>
+		<td style="border-top: 1px solid #000000" height="20" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><font size=1 color="#FFFFFF">[42]</font></td>
+		<td style="border-top: 1px solid #000000" colspan=2 align="left" valign=bottom><font color="#000000">Subtotal</font></td>
+		<td style="border-top: 1px solid #000000" align="right" valign=bottom sdval="135.69" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{subtotal}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=middle bgcolor="#3B4E87"><b><font color="#FFFFFF">TERMS OF SALE AND OTHER COMMENTS</font></b></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><font color="#000000">Taxable</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000" align="right" valign=bottom sdval="135.69" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{taxable}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=top><font color="#000000">terms of sale : {{other_information}}]</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><font color="#000000">Tax rate</font></td>
+		<td style="border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0.0625" sdnum="1033;0;0.000%"><font color="#000000">{{tax_rate}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=top><font color="#000000">Payment terms : {{condition_payement}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Tax</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000" align="right" valign=bottom sdval="8.48" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{tax}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=top><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><font color="#000000">Freight</font></td>
+		<td style="border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{freight}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=top><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=bottom><font color="#000000">Insurance</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{inssurance}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=7 height="22" align="left" valign=middle bgcolor="#666666"><b><font color="#FFFFFF">ADDITIONAL DETAILS</font></b></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><font color="#000000">Legal/Consular</font></td>
+		<td style="border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{legal_consular}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=2 height="22" align="left" valign=bottom><font color="#000000">Country of Origin</font></td>
+		<td colspan=5 align="left" valign=bottom><font color="#000000">{{country_origins}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><font color="#000000">Inspection/Cert.</font></td>
+		<td style="border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{insepection}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=2 height="22" align="left" valign=bottom><font color="#000000">Port of Embarkation</font></td>
+		<td colspan=5 align="left" valign=bottom><font color="#000000">{{Port_Embarkation}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td style="border-bottom: 1px solid #000000" align="left" valign=bottom><font color="#000000">Other (specify)</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="right" valign=bottom sdval="0" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><font color="#000000">{{other}}</font></td>
+	</tr>
+	<tr>
+		<td colspan=2 height="23" align="left" valign=bottom><font color="#000000">Port of Discharge</font></td>
+		<td colspan=5 align="left" valign=bottom><font color="#000000">{{Port_Discharge}}</font></td>
+		<td align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" colspan=2 align="left" valign=bottom bgcolor="#E4E8F3"><b><font color="#000000">TOTAL</font></b></td>
+		<td style="border-top: 1px solid #000000" align="right" valign=bottom bgcolor="#E4E8F3" sdval="144.17" sdnum="1033;0;&quot;$&quot;#,##0.00;&quot;$&quot;(#,##0.00)"><b><font color="#000000">{{total_price}}</font></b></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td colspan=2 align="left" valign=top><font color="#000000">Currency</font></td>
+		<td align="center" valign=top><b><font color="#000000">USD</font></b></td>
+	</tr>
+	<tr>
+		<td colspan=2 height="20" align="left" valign=top><font color="#000000">Reason for Export:</font></td>
+		<td style="border-bottom: 1px solid #000000" colspan=5 align="center" valign=top><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td style="border-top: 1px solid #000000" align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+		<td align="left" valign=bottom><br></td>
+	</tr>
+	
+</table>
+<hr>
+
+</body>
+
+</html>
